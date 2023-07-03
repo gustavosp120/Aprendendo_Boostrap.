@@ -11,25 +11,73 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
+    <style type="text/css">
+      .marcador {
+        background: #fe9d9d;
+        border: 1px solid #D24E32;
+      }
+
+      .marcador-container{
+        background: #5bf946;
+        border: 1px solid #36ae26;
+      }
+    </style>
+
   </head>
 
   <body>
 
-    <div>
+    <div class="container marcador-container">
       
       <h2>Largura fixa</h2>
-
+      <div class="row">
+        <div class="marcador col">Area 1</div>
+        <div class="marcador col">Area 2</div>
+        <div class="marcador col">Area 3</div>
+        <div class="marcador col">Area 4</div>
+      </div>
       <h2>Largura automática (auto-layout)</h2>
+      <div class="row">
+        <div class="marcador col">Area 1</div>
+        <div class="marcador col-4">Area 2</div>
+        <div class="marcador col-6">Area 3</div>
+      </div>
 
       <h2>Largura igual empilhada</h2>
+       <div class="row">
+        <div class="marcador col-lg">Area 1</div>
+        <div class="marcador col-lg">Area 2</div>
+        <div class="marcador col-lg">Area 3</div>
+      </div>
 
       <h2>Ordenando</h2>
+      <div class="row">
+        <div class="marcador col-lg-4 order-2">Area 1</div>
+        <div class="marcador col-lg-4 order-1">Area 2</div>
+        <div class="marcador col-lg-4 order-3">Area 3</div>
+      </div>
 
       <h2>offset</h2>
+       <div class="row">
+        <div class="marcador col-md-6 offset-md-3">Login...</div>
+      </div>
 
       <h2>offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="marcador col-lg-3 ">Conteudo 1</div>
+        <div class="marcador col-lg-3 offset-md-3">Conteudo 2</div>
+        </div>
 
       <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-lg-6" style="border:1px solid blue";>
+          col-lg-6
+          <div class="row">
+            <div class="col-lg-6 marcador">Conteudo 1</div>
+            <div class="col-lg-4 marcador">Conteudo 2</div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
